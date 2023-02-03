@@ -1,10 +1,15 @@
 {
   "name": "react-image-focal-point",
   "version": "0.0.0",
-  "description": "Image focal point component for React",
+  "workspaces": [
+    "packages/**/*",
+    "examples/**/*",
+    "docs/**/*"
+  ],
   "scripts": {
     "build": "turbo run build",
     "start": "turbo run start --filter=!./docs --continue",
+    "test": "turbo run test",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "changeset": "changeset",
     "publish-packages": "turbo run build --filter=./packages/**/* && changeset publish"
