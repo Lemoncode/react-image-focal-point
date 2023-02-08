@@ -4,7 +4,7 @@
     'focal-point-subtitle result-subtitle'
     'focal-point result';
   row-gap: 1rem;
-  column-gap: 10rem;
+  column-gap: 5rem;
   grid-template-columns: auto 1fr;
 }
 
@@ -22,29 +22,6 @@ h2 {
 
 .focal-point {
   grid-area: focal-point;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: flex-end;
-}
-
-.submit-button {
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  border-style: none;
-  box-sizing: border-box;
-  min-width: 100px;
-  background-color: #a3c769;
-  font-size: 14px;
-}
-
-.submit-button:hover {
-  background-color: #8ebc5a;
-}
-
-.submit-button:active {
-  transform: scale(0.95);
 }
 
 .result-subtitle {

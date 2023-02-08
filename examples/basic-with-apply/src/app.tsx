@@ -7,6 +7,7 @@ const IMAGE_URL = 'landscape.jpg';
 
 export const App = () => {
   const [focalPoint, setFocalPoint] = React.useState<FocalPoint>();
+  
   return (
     <Playground src={IMAGE_URL} focalPoint={focalPoint}>
       <ImageFocalPoint src={IMAGE_URL} onChange={setFocalPoint} />
