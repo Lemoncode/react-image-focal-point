@@ -37,14 +37,14 @@ const App = () => {
 
 ```
 
-<a href="https://stackblitz.com/github/Lemoncode/react-image-focal-point/tree/main/examples/basic">
+<a target="_blank" href="https://stackblitz.com/github/Lemoncode/react-image-focal-point/tree/main/examples/basic">
   <img
     src="https://developer.stackblitz.com/img/open_in_stackblitz.svg"
     alt="Edit on StackBlitz"
     title="Edit on StackBlitz"
     height="36"
   />
-</a> <a href="https://codesandbox.io/s/github/Lemoncode/react-image-focal-point/tree/main/examples/basic">
+</a> <a target="_blank" href="https://codesandbox.io/s/github/Lemoncode/react-image-focal-point/tree/main/examples/basic">
   <img
     src="https://codesandbox.io/static/img/play-codesandbox.svg"
     alt="Edit on StackBlitz"

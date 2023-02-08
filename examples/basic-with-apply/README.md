@@ -2,14 +2,14 @@
 
 This example is the same as the [basic example](https://github.com/Lemoncode/react-image-focal-point/tree/main/examples/basic), but it adds a button to apply the focal point changes to the image.
 
-<a href="https://stackblitz.com/github/Lemoncode/react-image-focal-point/tree/main/examples/basic-with-apply">
+<a target="_blank" href="https://stackblitz.com/github/Lemoncode/react-image-focal-point/tree/main/examples/basic-with-apply">
   <img
     src="https://developer.stackblitz.com/img/open_in_stackblitz.svg"
     alt="Edit on StackBlitz"
     title="Edit on StackBlitz"
     height="36"
   />
-</a> <a href="https://codesandbox.io/s/github/Lemoncode/react-image-focal-point/tree/main/examples/basic-with-apply">
+</a> <a target="_blank" href="https://codesandbox.io/s/github/Lemoncode/react-image-focal-point/tree/main/examples/basic-with-apply">
   <img
     src="https://codesandbox.io/static/img/play-codesandbox.svg"
     alt="Edit on StackBlitz"
