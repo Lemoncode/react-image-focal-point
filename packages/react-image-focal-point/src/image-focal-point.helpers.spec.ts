@@ -39,8 +39,8 @@ describe('focal-point/onMove specs', () => {
         onChange: jest.fn(),
       };
       const event = {
-        clientX: 101,
-        clientY: 100,
+        pageX: 101,
+        pageY: 100,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -63,8 +63,8 @@ describe('focal-point/onMove specs', () => {
         onChange: jest.fn(),
       };
       const event = {
-        clientX: 99,
-        clientY: 100,
+        pageX: 99,
+        pageY: 100,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -87,8 +87,8 @@ describe('focal-point/onMove specs', () => {
         onChange: jest.fn(),
       };
       const event = {
-        clientX: 100,
-        clientY: 101,
+        pageX: 100,
+        pageY: 101,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -111,8 +111,8 @@ describe('focal-point/onMove specs', () => {
         onChange: jest.fn(),
       };
       const event = {
-        clientX: 100,
-        clientY: 99,
+        pageX: 100,
+        pageY: 99,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -135,8 +135,8 @@ describe('focal-point/onMove specs', () => {
         onChange: jest.fn(),
       };
       const event = {
-        clientX: 98,
-        clientY: 102,
+        pageX: 98,
+        pageY: 102,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -159,8 +159,8 @@ describe('focal-point/onMove specs', () => {
         onChange: jest.fn(),
       };
       const event = {
-        clientX: -20,
-        clientY: 100,
+        pageX: -20,
+        pageY: 100,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -183,8 +183,8 @@ describe('focal-point/onMove specs', () => {
         onChange: jest.fn(),
       };
       const event = {
-        clientX: 100,
-        clientY: -20,
+        pageX: 100,
+        pageY: -20,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -207,8 +207,8 @@ describe('focal-point/onMove specs', () => {
         onChange: jest.fn(),
       };
       const event = {
-        clientX: 210,
-        clientY: 100,
+        pageX: 210,
+        pageY: 100,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -231,8 +231,8 @@ describe('focal-point/onMove specs', () => {
         onChange: jest.fn(),
       };
       const event = {
-        clientX: 100,
-        clientY: 220,
+        pageX: 100,
+        pageY: 220,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -279,8 +279,8 @@ describe('focal-point/onMove specs', () => {
         onChange: jest.fn(),
       };
       const event = {
-        clientX: 501,
-        clientY: 500,
+        pageX: 501,
+        pageY: 500,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -303,8 +303,8 @@ describe('focal-point/onMove specs', () => {
         onChange: jest.fn(),
       };
       const event = {
-        clientX: 499,
-        clientY: 500,
+        pageX: 499,
+        pageY: 500,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -327,8 +327,8 @@ describe('focal-point/onMove specs', () => {
         onChange: jest.fn(),
       };
       const event = {
-        clientX: 500,
-        clientY: 501,
+        pageX: 500,
+        pageY: 501,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -351,8 +351,8 @@ describe('focal-point/onMove specs', () => {
         onChange: jest.fn(),
       };
       const event = {
-        clientX: 500,
-        clientY: 499,
+        pageX: 500,
+        pageY: 499,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -375,8 +375,8 @@ describe('focal-point/onMove specs', () => {
         onChange: jest.fn(),
       };
       const event = {
-        clientX: 498,
-        clientY: 502,
+        pageX: 498,
+        pageY: 502,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -399,8 +399,8 @@ describe('focal-point/onMove specs', () => {
         onChange: jest.fn(),
       };
       const event = {
-        clientX: 320,
-        clientY: 500,
+        pageX: 320,
+        pageY: 500,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -423,8 +423,8 @@ describe('focal-point/onMove specs', () => {
         onChange: jest.fn(),
       };
       const event = {
-        clientX: 500,
-        clientY: 320,
+        pageX: 500,
+        pageY: 320,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -447,8 +447,8 @@ describe('focal-point/onMove specs', () => {
         onChange: jest.fn(),
       };
       const event = {
-        clientX: 610,
-        clientY: 500,
+        pageX: 610,
+        pageY: 500,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -471,8 +471,8 @@ describe('focal-point/onMove specs', () => {
         onChange: jest.fn(),
       };
       const event = {
-        clientX: 500,
-        clientY: 620,
+        pageX: 500,
+        pageY: 620,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 

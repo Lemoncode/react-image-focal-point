@@ -18,17 +18,17 @@ const defaultLabels: LabelProps = {
   focalPoint: 'Focal point',
 };
 
-interface Props {
+export interface ImageFocalPointProps {
   src: string;
   onChange: (focalPoint: FocalPoint) => void;
-  alt?: string;
   focalPoint?: FocalPoint;
+  alt?: string;
+  labels?: LabelProps;
   classes?: ClassesProps;
   className?: string;
-  labels?: LabelProps;
 }
 
-export const ImageFocalPoint: React.FC<Props> = props => {
+export const ImageFocalPoint: React.FC<ImageFocalPointProps> = props => {
   const { src, onChange, alt, focalPoint } = props;
   const labels = { ...defaultLabels, ...(props.labels || {}) };
   const { ref, x, y, onMove, canMove, setCanMove } = useFocalPoint({ focalPoint, onChange });
