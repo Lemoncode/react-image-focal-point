@@ -10,7 +10,6 @@
   "author": "Lemoncode",
   "homepage": "https://github.com/Lemoncode/react-image-focal-point/tree/main/examples#readme",
   "devDependencies": {
-    "@lemoncode/tsconfig": "^0.0.0",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
     "@vitejs/plugin-react": "^3.1.0",
@@ -18,7 +17,7 @@
     "vite": "^4.1.1"
   },
   "dependencies": {
-    "@lemoncode/react-image-focal-point": "^0.0.0",
+    "@lemoncode/react-image-focal-point": "*",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   }
