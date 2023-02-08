@@ -1,5 +1,5 @@
 {
-  "name": "basic-example",
+  "name": "basic-with-apply-example",
   "scripts": {
     "start": "vite --open"
   },

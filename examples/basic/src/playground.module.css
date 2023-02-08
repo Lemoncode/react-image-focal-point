@@ -1,0 +1,61 @@
+.root {
+  display: grid;
+  grid-template-areas:
+    'focal-point-subtitle result-subtitle'
+    'focal-point result';
+  row-gap: 1rem;
+  column-gap: 10rem;
+  grid-template-columns: auto 1fr;
+}
+
+h2 {
+  font-family: Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.focal-point-subtitle {
+  grid-area: focal-point-subtitle;
+}
+
+.focal-point {
+  grid-area: focal-point;
+}
+
+.result-subtitle {
+  grid-area: result-subtitle;
+}
+
+.result {
+  grid-area: result;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  max-width: 40vw;
+}
+
+.portrait-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-width: 300px;
+}
+
+.landscape-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+.square-image {
+  grid-area: square;
+  object-fit: cover;
+  width: 300px;
+  height: 300px;
+}

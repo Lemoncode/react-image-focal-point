@@ -1,10 +1,10 @@
 import React from 'react';
 import { onMove } from './image-focal-point.helpers';
+import { FocalPoint } from './image-focal-point.vm';
 
 interface Props {
-  x?: number;
-  y?: number;
-  onChange: (x: number, y: number) => void;
+  focalPoint?: FocalPoint;
+  onChange: (focalPoint: FocalPoint) => void;
 }
 
 const DEFAULT_PERCENTAGE = 50;
@@ -12,8 +12,8 @@ const DEFAULT_PERCENTAGE = 50;
 export const useFocalPoint = (props: Props) => {
   const ref = React.useRef<HTMLDivElement>(null);
   const boundingRectangle = React.useRef<DOMRect | null>(null);
-  const [x, setX] = React.useState<number>(props.x ?? DEFAULT_PERCENTAGE);
-  const [y, setY] = React.useState<number>(props.y ?? DEFAULT_PERCENTAGE);
+  const [x, setX] = React.useState<number>(props.focalPoint?.x ?? DEFAULT_PERCENTAGE);
+  const [y, setY] = React.useState<number>(props.focalPoint?.y ?? DEFAULT_PERCENTAGE);
   const [canMove, setCanMove] = React.useState(false);
 
   React.useEffect(() => {
@@ -30,7 +30,7 @@ export const useFocalPoint = (props: Props) => {
       setX,
       setY,
       boundingRectangle: boundingRectangle.current!,
-      onChange: props.onChange,
+      onChange: (x, y) => props.onChange({ x, y }),
       canMove,
     }),
     canMove,
