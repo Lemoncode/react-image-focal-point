@@ -8,7 +8,7 @@
     "url": "git+https://github.com/Lemoncode/react-image-focal-point.git"
   },
   "author": "Lemoncode",
-  "homepage": "https://github.com/Lemoncode/react-image-focal-point/tree/main/examples#readme",
+  "homepage": "https://github.com/Lemoncode/react-image-focal-point/tree/main/#readme",
   "devDependencies": {
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
