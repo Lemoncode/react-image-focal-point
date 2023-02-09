@@ -1,4 +1,4 @@
-name: Publish Packages
+name: CI
 
 on:
   pull_request:

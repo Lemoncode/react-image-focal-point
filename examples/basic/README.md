@@ -28,7 +28,7 @@ const App = () => {
   return (
 +   <ImageFocalPoint
 +     src="your-image-src"
-+     onClick={(focalPoint) => {
++     onChange={(focalPoint) => {
 +       // Whatever you want to do when the user clicks on the image
 +     }}
 +   />

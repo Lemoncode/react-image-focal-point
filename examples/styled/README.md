@@ -14,7 +14,7 @@ const App = () => {
   return (
     <ImageFocalPoint
        src="your-image-src"
-       onClick={(newFocalPoint) => {
+       onChange={(newFocalPoint) => {
          // Whatever you want to do when the user clicks on the image
        }}
      />
@@ -47,7 +47,7 @@ const App = () => {
     <ImageFocalPoint
 +      className="image-focal-point"
        src="your-image-src"
-       onClick={(newFocalPoint) => {
+       onChange={(newFocalPoint) => {
          // Whatever you want to do when the user clicks on the image
        }}
      />
@@ -93,7 +93,7 @@ const App = () => {
 +        focalPoint: 'focal-point',
 +      }}
        src="your-image-src"
-       onClick={(newFocalPoint) => {
+       onChange={(newFocalPoint) => {
          // Whatever you want to do when the user clicks on the image
        }}
      />

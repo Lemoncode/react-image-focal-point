@@ -13,14 +13,13 @@ import { ImageFocalPoint } from '@lemoncode/react-image-focal-point';
 const App = () => {
   return (
     <ImageFocalPoint
-       src="your-image-src"
-       onClick={(newFocalPoint) => {
-         // Whatever you want to do when the user clicks on the image
-       }}
-     />
+      src="your-image-src"
+      onChange={newFocalPoint => {
+        // Whatever you want to do when the user clicks on the image
+      }}
+    />
   );
-}
-
+};
 ```
 
 Create a state to provide the initial focal point values and store the new ones:
@@ -35,7 +34,7 @@ const App = () => {
     <ImageFocalPoint
        src="your-image-src"
 +      focalPoint={focalPoint}
-       onClick={(newFocalPoint) => {
+       onChange={(newFocalPoint) => {
 +        setFocalPoint(newFocalPoint);
        }}
      />
@@ -59,4 +58,3 @@ const App = () => {
     height="36"
     />
   </a>
-

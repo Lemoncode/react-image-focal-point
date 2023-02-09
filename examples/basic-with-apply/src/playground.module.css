@@ -1,6 +1,18 @@
+body {
+  font-family: Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
 .root {
   display: grid;
   grid-template-areas:
+    'title title'
+    'description description'
     'focal-point-subtitle result-subtitle'
     'focal-point result';
   row-gap: 1rem;
@@ -8,16 +20,23 @@
   grid-template-columns: auto 1fr;
 }
 
-h2 {
-  font-family: Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
-  margin: 0;
-  font-size: 1.5rem;
+.title {
+  grid-area: title;
+  font-size: 2rem;
   font-weight: bold;
+  text-align: center;
+}
+
+.description {
+  grid-area: description;
   text-align: center;
 }
 
 .focal-point-subtitle {
   grid-area: focal-point-subtitle;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 .focal-point {
@@ -49,6 +68,9 @@ h2 {
 
 .result-subtitle {
   grid-area: result-subtitle;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 .result {

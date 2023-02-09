@@ -13,6 +13,10 @@ export const Playground: React.FC<Props> = props => {
 
   return (
     <div className={classes.root}>
+      <h1 className={classes.title}>Styled</h1>
+      <p className={classes.description}>
+        This example shows how to provide styles to the image focal point component.
+      </p>
       <h2 className={classes.focalPointSubtitle}>Image focal point</h2>
       <div className={classes.focalPoint}>{children}</div>
 

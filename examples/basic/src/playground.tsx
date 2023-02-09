@@ -13,6 +13,10 @@ export const Playground: React.FC<Props> = props => {
 
   return (
     <div className={classes.root}>
+      <h1 className={classes.title}>Basic</h1>
+      <p className={classes.description}>
+        This example shows how to use the library with the minimal properties (<i>src</i> and <i>onChange</i>)
+      </p>
       <h2 className={classes.focalPointSubtitle}>Image focal point</h2>
       <div className={classes.focalPoint}>{children}</div>
 
