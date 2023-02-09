@@ -21,10 +21,10 @@ export const Playground: React.FC<Props> = props => {
 
   return (
     <div className={classes.root}>
-      <h1 className={classes.title}>Basic with apply button</h1>
+      <h1 className={classes.title}>Basic example, apply button</h1>
       <p className={classes.description}>
-        This example is the same as the basic example, but it adds a button to apply the focal point changes to the
-        image.
+        In this example you can play changing the focal point by dragging it, and once you are done you can click on the
+        apply button and it will reflected on the example pictures
       </p>
       <h2 className={classes.focalPointSubtitle}>Image focal point</h2>
       <form className={classes.focalPoint} onSubmit={handleSubmit}>

@@ -1,8 +1,8 @@
 # Controlled
 
-This example shows how to provide some initial focal point values.
+In this example you can check how to set an initial focal point value (by default it is show centered, but you can override it).
 
-## How to use
+## How to apply this feature in your code
 
 Import the library styles and the component. Use it with minimal properties:
 

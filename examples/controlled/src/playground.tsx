@@ -14,7 +14,10 @@ export const Playground: React.FC<Props> = props => {
   return (
     <div className={classes.root}>
       <h1 className={classes.title}>Controlled</h1>
-      <p className={classes.description}>This example shows how to provide some initial focal point values.</p>
+      <p className={classes.description}>
+        In this example you can check how to set an initial focal point value (by default it is show centered, but you
+        can override it).
+      </p>
       <h2 className={classes.focalPointSubtitle}>Image focal point</h2>
       <div className={classes.focalPoint}>{children}</div>
 

@@ -1,8 +1,8 @@
 # Basic
 
-This example shows how to use the library with the minimal properties.
+Minimum example, here you can just drag the focal point and the example pictures focal point will be updated on real time.
 
-## How to use
+## How to apply this feature in your code
 
 Import the library styles and the component:
 
@@ -52,4 +52,3 @@ const App = () => {
     height="36"
     />
   </a>
-

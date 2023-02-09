@@ -2,7 +2,7 @@
 
 This example shows how to provide styles to the image focal point component.
 
-## How to use
+## How to apply this feature in your code
 
 Import the library styles and the component. Use it with minimal properties:
 
@@ -56,7 +56,7 @@ const App = () => {
 
 ```
 
-You can also provide styles to the image and the focal point:
+You can also customize the look & feel of the the image and the focal point by adding custom styles:
 
 _app.css_
 

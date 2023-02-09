@@ -1,5 +1,5 @@
 {
-  "extends": "@lemoncode/tsconfig/react.json",
+  "extends": "@lemoncode/config/tsconfig/react.json",
   "compilerOptions": {
     "outDir": "dist",
   },
