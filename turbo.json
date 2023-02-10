@@ -9,6 +9,7 @@
       "dependsOn": ["^build"],
       "cache": false
     },
-    "test": {}
+    "test": {},
+    "test:e2e": {}
   }
 }
