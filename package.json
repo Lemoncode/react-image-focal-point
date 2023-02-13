@@ -8,8 +8,8 @@
   ],
   "scripts": {
     "build": "turbo run build",
-    "start": "turbo run start --continue --filter=./examples/**/*",
-    "start:e2e": "turbo run start --continue --filter=./packages/e2e-react-web-app",
+    "start": "turbo run start --continue --filter=./examples/**/* --filter=./packages/**/*",
+    "start:e2e": "turbo run start --continue --filter=./packages/**/*",
     "test": "turbo run test",
     "test:e2e": "turbo run test:e2e",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",

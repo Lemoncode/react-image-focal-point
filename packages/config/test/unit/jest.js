@@ -12,8 +12,9 @@ export default {
   restoreMocks: true,
   testEnvironment: 'jsdom',
   moduleDirectories: ['**/src', 'node_modules'],
-  setupFilesAfterEnv: ['@lemoncode/config/test/jest/setup.ts'],
+  setupFilesAfterEnv: ['@lemoncode/config/test/unit/setup.ts'],
   moduleNameMapper: {
-    '\\.css$': '@lemoncode/config/test/jest/file.mock.js',
+    '\\.css$': '@lemoncode/config/test/unit/file.mock.js',
   },
+  modulePathIgnorePatterns: ['<rootDir>/e2e'],
 };

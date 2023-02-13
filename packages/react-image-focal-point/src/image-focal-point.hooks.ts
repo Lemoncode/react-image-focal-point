@@ -16,11 +16,11 @@ export const useFocalPoint = (props: Props) => {
   const [y, setY] = React.useState<number>(props.focalPoint?.y ?? DEFAULT_PERCENTAGE);
   const [canMove, setCanMove] = React.useState(false);
 
-  React.useEffect(() => {
-    if (ref.current) {
-      boundingRectangle.current = ref.current.getBoundingClientRect();
-    }
-  }, [ref]);
+  // React.useEffect(() => {
+  //   if (ref.current) {
+  //     boundingRectangle.current = ref.current.getBoundingClientRect();
+  //   }
+  // }, [ref, window.scrollX, window.scrollY]);
 
   return {
     ref,
@@ -29,7 +29,8 @@ export const useFocalPoint = (props: Props) => {
     onMove: onMove({
       setX,
       setY,
-      boundingRectangle: boundingRectangle.current!,
+      container: ref.current!,
+      // boundingRectangle: boundingRectangle.current!,
       onChange: (x, y) => props.onChange({ x, y }),
       canMove,
     }),

@@ -7,14 +7,19 @@ const imageContainer = {
 
 describe('focal-point/onMove specs', () => {
   describe('base case', () => {
-    const boundingRectangle = { top: 0, left: 0 } as DOMRect;
+    const container = {
+      getBoundingClientRect: jest.fn().mockReturnValue({
+        top: 0,
+        left: 0,
+      }),
+    } as unknown as HTMLDivElement;
 
     it('should does not call to setX, setY nor onChange when it feeds canMove equals false', () => {
       // Arrange
       const props = {
         setX: jest.fn(),
         setY: jest.fn(),
-        boundingRectangle,
+        container,
         canMove: false,
         onChange: jest.fn(),
       };
@@ -34,13 +39,13 @@ describe('focal-point/onMove specs', () => {
       const props = {
         setX: jest.fn(),
         setY: jest.fn(),
-        boundingRectangle,
+        container,
         canMove: true,
         onChange: jest.fn(),
       };
       const event = {
-        pageX: 101,
-        pageY: 100,
+        clientX: 101,
+        clientY: 100,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -58,13 +63,13 @@ describe('focal-point/onMove specs', () => {
       const props = {
         setX: jest.fn(),
         setY: jest.fn(),
-        boundingRectangle,
+        container,
         canMove: true,
         onChange: jest.fn(),
       };
       const event = {
-        pageX: 99,
-        pageY: 100,
+        clientX: 99,
+        clientY: 100,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -82,13 +87,13 @@ describe('focal-point/onMove specs', () => {
       const props = {
         setX: jest.fn(),
         setY: jest.fn(),
-        boundingRectangle,
+        container,
         canMove: true,
         onChange: jest.fn(),
       };
       const event = {
-        pageX: 100,
-        pageY: 101,
+        clientX: 100,
+        clientY: 101,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -106,13 +111,13 @@ describe('focal-point/onMove specs', () => {
       const props = {
         setX: jest.fn(),
         setY: jest.fn(),
-        boundingRectangle,
+        container,
         canMove: true,
         onChange: jest.fn(),
       };
       const event = {
-        pageX: 100,
-        pageY: 99,
+        clientX: 100,
+        clientY: 99,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -130,13 +135,13 @@ describe('focal-point/onMove specs', () => {
       const props = {
         setX: jest.fn(),
         setY: jest.fn(),
-        boundingRectangle,
+        container,
         canMove: true,
         onChange: jest.fn(),
       };
       const event = {
-        pageX: 98,
-        pageY: 102,
+        clientX: 98,
+        clientY: 102,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -154,13 +159,13 @@ describe('focal-point/onMove specs', () => {
       const props = {
         setX: jest.fn(),
         setY: jest.fn(),
-        boundingRectangle,
+        container,
         canMove: true,
         onChange: jest.fn(),
       };
       const event = {
-        pageX: -20,
-        pageY: 100,
+        clientX: -20,
+        clientY: 100,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -178,13 +183,13 @@ describe('focal-point/onMove specs', () => {
       const props = {
         setX: jest.fn(),
         setY: jest.fn(),
-        boundingRectangle,
+        container,
         canMove: true,
         onChange: jest.fn(),
       };
       const event = {
-        pageX: 100,
-        pageY: -20,
+        clientX: 100,
+        clientY: -20,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -202,13 +207,13 @@ describe('focal-point/onMove specs', () => {
       const props = {
         setX: jest.fn(),
         setY: jest.fn(),
-        boundingRectangle,
+        container,
         canMove: true,
         onChange: jest.fn(),
       };
       const event = {
-        pageX: 210,
-        pageY: 100,
+        clientX: 210,
+        clientY: 100,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -226,13 +231,13 @@ describe('focal-point/onMove specs', () => {
       const props = {
         setX: jest.fn(),
         setY: jest.fn(),
-        boundingRectangle,
+        container,
         canMove: true,
         onChange: jest.fn(),
       };
       const event = {
-        pageX: 100,
-        pageY: 220,
+        clientX: 100,
+        clientY: 220,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -247,14 +252,19 @@ describe('focal-point/onMove specs', () => {
   });
 
   describe('image container inside some page an its location is not 0/0', () => {
-    const boundingRectangle = { top: 400, left: 400 } as DOMRect;
+    const container = {
+      getBoundingClientRect: jest.fn().mockReturnValue({
+        top: 400,
+        left: 400,
+      }),
+    } as unknown as HTMLDivElement;
 
     it('should does not call to setX, setY nor onChange when it feeds canMove equals false', () => {
       // Arrange
       const props = {
         setX: jest.fn(),
         setY: jest.fn(),
-        boundingRectangle,
+        container,
         canMove: false,
         onChange: jest.fn(),
       };
@@ -274,13 +284,13 @@ describe('focal-point/onMove specs', () => {
       const props = {
         setX: jest.fn(),
         setY: jest.fn(),
-        boundingRectangle,
+        container,
         canMove: true,
         onChange: jest.fn(),
       };
       const event = {
-        pageX: 501,
-        pageY: 500,
+        clientX: 501,
+        clientY: 500,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -298,13 +308,13 @@ describe('focal-point/onMove specs', () => {
       const props = {
         setX: jest.fn(),
         setY: jest.fn(),
-        boundingRectangle,
+        container,
         canMove: true,
         onChange: jest.fn(),
       };
       const event = {
-        pageX: 499,
-        pageY: 500,
+        clientX: 499,
+        clientY: 500,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -322,13 +332,13 @@ describe('focal-point/onMove specs', () => {
       const props = {
         setX: jest.fn(),
         setY: jest.fn(),
-        boundingRectangle,
+        container,
         canMove: true,
         onChange: jest.fn(),
       };
       const event = {
-        pageX: 500,
-        pageY: 501,
+        clientX: 500,
+        clientY: 501,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -346,13 +356,13 @@ describe('focal-point/onMove specs', () => {
       const props = {
         setX: jest.fn(),
         setY: jest.fn(),
-        boundingRectangle,
+        container,
         canMove: true,
         onChange: jest.fn(),
       };
       const event = {
-        pageX: 500,
-        pageY: 499,
+        clientX: 500,
+        clientY: 499,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -370,13 +380,13 @@ describe('focal-point/onMove specs', () => {
       const props = {
         setX: jest.fn(),
         setY: jest.fn(),
-        boundingRectangle,
+        container,
         canMove: true,
         onChange: jest.fn(),
       };
       const event = {
-        pageX: 498,
-        pageY: 502,
+        clientX: 498,
+        clientY: 502,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -394,13 +404,13 @@ describe('focal-point/onMove specs', () => {
       const props = {
         setX: jest.fn(),
         setY: jest.fn(),
-        boundingRectangle,
+        container,
         canMove: true,
         onChange: jest.fn(),
       };
       const event = {
-        pageX: 320,
-        pageY: 500,
+        clientX: 320,
+        clientY: 500,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -418,13 +428,13 @@ describe('focal-point/onMove specs', () => {
       const props = {
         setX: jest.fn(),
         setY: jest.fn(),
-        boundingRectangle,
+        container,
         canMove: true,
         onChange: jest.fn(),
       };
       const event = {
-        pageX: 500,
-        pageY: 320,
+        clientX: 500,
+        clientY: 320,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -442,13 +452,13 @@ describe('focal-point/onMove specs', () => {
       const props = {
         setX: jest.fn(),
         setY: jest.fn(),
-        boundingRectangle,
+        container,
         canMove: true,
         onChange: jest.fn(),
       };
       const event = {
-        pageX: 610,
-        pageY: 500,
+        clientX: 610,
+        clientY: 500,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
@@ -466,13 +476,13 @@ describe('focal-point/onMove specs', () => {
       const props = {
         setX: jest.fn(),
         setY: jest.fn(),
-        boundingRectangle,
+        container,
         canMove: true,
         onChange: jest.fn(),
       };
       const event = {
-        pageX: 500,
-        pageY: 620,
+        clientX: 500,
+        clientY: 620,
         currentTarget: imageContainer,
       } as unknown as MouseEvent;
 
