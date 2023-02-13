@@ -26,7 +26,7 @@
     "clean": "rimraf dist",
     "test": "jest -c ./config/test/jest.js",
     "test:watch": "npm run test -- --watchAll -i",
-    "test:e2e-dev": "playwright test --debug --project=chromium"
+    "test:e2e": "playwright test"
   },
   "repository": {
     "type": "git",

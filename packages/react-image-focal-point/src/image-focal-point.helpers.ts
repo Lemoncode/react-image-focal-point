@@ -16,9 +16,9 @@ export const onMove = (props: Props) => e => {
   if (props.canMove) {
     const event = e as MouseEvent;
     const containerBoundingRectangle = props.container.getBoundingClientRect();
-    const currentTarget = event.currentTarget as HTMLDivElement;
     const xPixels = event.clientX - containerBoundingRectangle.left;
     const yPixels = event.clientY - containerBoundingRectangle.top;
+    const currentTarget = event.currentTarget as HTMLDivElement;
     const x = parseToPercentage(xPixels, currentTarget.clientWidth);
     const y = parseToPercentage(yPixels, currentTarget.clientHeight);
     props.setX(x);
