@@ -65,11 +65,8 @@ test.describe('controlled with scroll', () => {
     await expect(focalPointButton).toHaveAttribute('style', 'left: 5%; top: 10%; cursor: grab;');
   });
 
-  const REAL_FIREFOX_SCROLL_Y = 686; // Weird firefox scroll Y
-
   test('should place the focal point button on X=60% and Y=40% when it moves X=1180px and Y=1120px because page has 1000px of margin', async ({
     page,
-    browserName,
   }) => {
     const focalPointButton = page.getByRole('button', { name: 'Focal Point' });
     const scrollY = 800;
@@ -80,7 +77,7 @@ test.describe('controlled with scroll', () => {
     await expect(focalPointButton).toHaveAttribute('style', 'left: 5%; top: 10%; cursor: grabbing;');
 
     const x = 1180;
-    const y = 1120 - (browserName === 'firefox' ? REAL_FIREFOX_SCROLL_Y : scrollY);
+    const y = 1120 - scrollY;
     await page.mouse.move(x, y);
     await expect(focalPointButton).toHaveAttribute('style', 'left: 60%; top: 40%; cursor: grabbing;');
     await focalPointButton.dispatchEvent('mouseup');
