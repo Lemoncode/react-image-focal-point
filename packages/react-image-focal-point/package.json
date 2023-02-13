@@ -1,0 +1,59 @@
+{
+  "name": "@lemoncode/react-image-focal-point",
+  "version": "0.0.0",
+  "description": "Image focal point component for React",
+  "private": false,
+  "files": [
+    "dist"
+  ],
+  "module": "./dist/react-image-focal-point.es.js",
+  "main": "./dist/react-image-focal-point.cjs.js",
+  "exports": {
+    ".": {
+      "import": "./dist/react-image-focal-point.es.js",
+      "require": "./dist/react-image-focal-point.cjs.js"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development run-p \"build:js -- --watch\" \"types -- --watch\"",
+    "build": "npm run clean && npm run build:js  && npm run types",
+    "build:js": "vite build",
+    "types": "tsc --emitDeclarationOnly",
+    "clean": "rimraf dist",
+    "test": "jest -c ./config/test/jest.js",
+    "test:watch": "npm run test -- --watchAll -i"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lemoncode/react-image-focal-point.git",
+    "directory": "packages/react-image-focal-point"
+  },
+  "bugs": {
+    "url": "https://github.com/Lemoncode/react-image-focal-point/issues"
+  },
+  "homepage": "https://github.com/Lemoncode/react-image-focal-point#readme",
+  "author": "Lemoncode",
+  "license": "MIT",
+  "keywords": [
+    "react-image-focal-point",
+    "focal point",
+    "image focal point",
+    "react image focal point"
+  ],
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@lemoncode/config": "*",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "clsx": "^1.2.1"
+  }
+}
