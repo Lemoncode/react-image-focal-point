@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
 
-const BASE_URL = '/basic';
+const BASE_URL = '/styled';
 
-test.describe('basic', () => {
+test.describe('styled', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto(BASE_URL);
   });
@@ -13,7 +13,7 @@ test.describe('basic', () => {
     await expect(focalPointButton).toHaveAttribute('style', 'left: 50%; top: 50%; cursor: grab;');
   });
 
-  test('should place the focal point button on X=60% and Y=40% when it moves X=180px and Y=120px', async ({ page }) => {
+  test('should place the focal point button on X=36% and Y=24% when it moves X=180px and Y=120px', async ({ page }) => {
     const focalPointButton = page.getByRole('button', { name: 'Focal Point' });
     const x = 180;
     const y = 120;
@@ -21,13 +21,13 @@ test.describe('basic', () => {
     await focalPointButton.dispatchEvent('mousedown');
     await expect(focalPointButton).toHaveAttribute('style', 'left: 50%; top: 50%; cursor: grabbing;');
     await page.mouse.move(x, y);
-    await expect(focalPointButton).toHaveAttribute('style', 'left: 60%; top: 40%; cursor: grabbing;');
+    await expect(focalPointButton).toHaveAttribute('style', 'left: 36%; top: 24%; cursor: grabbing;');
     await focalPointButton.dispatchEvent('mouseup');
-    await expect(focalPointButton).toHaveAttribute('style', 'left: 60%; top: 40%; cursor: grab;');
+    await expect(focalPointButton).toHaveAttribute('style', 'left: 36%; top: 24%; cursor: grab;');
   });
 });
 
-test.describe('basic with margin', () => {
+test.describe('styled with margin', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto(`${BASE_URL}-with-margin`);
   });
@@ -38,7 +38,7 @@ test.describe('basic with margin', () => {
     await expect(focalPointButton).toHaveAttribute('style', 'left: 50%; top: 50%; cursor: grab;');
   });
 
-  test('should place the focal point button on X=60% and Y=40% when it moves X=380px and Y=320px because page has 200px of margin', async ({
+  test('should place the focal point button on X=36% and Y=24% when it moves X=380px and Y=320px because page has 200px of margin', async ({
     page,
   }) => {
     const focalPointButton = page.getByRole('button', { name: 'Focal Point' });
@@ -48,13 +48,13 @@ test.describe('basic with margin', () => {
     await focalPointButton.dispatchEvent('mousedown');
     await expect(focalPointButton).toHaveAttribute('style', 'left: 50%; top: 50%; cursor: grabbing;');
     await page.mouse.move(x, y);
-    await expect(focalPointButton).toHaveAttribute('style', 'left: 60%; top: 40%; cursor: grabbing;');
+    await expect(focalPointButton).toHaveAttribute('style', 'left: 36%; top: 24%; cursor: grabbing;');
     await focalPointButton.dispatchEvent('mouseup');
-    await expect(focalPointButton).toHaveAttribute('style', 'left: 60%; top: 40%; cursor: grab;');
+    await expect(focalPointButton).toHaveAttribute('style', 'left: 36%; top: 24%; cursor: grab;');
   });
 });
 
-test.describe('basic with scroll', () => {
+test.describe('styled with scroll', () => {
   test.beforeEach(async ({ page }) => {
     await page.goto(`${BASE_URL}-with-scroll`);
   });
@@ -67,7 +67,7 @@ test.describe('basic with scroll', () => {
 
   const REAL_FIREFOX_SCROLL_Y = 686; // Weird firefox scroll Y
 
-  test('should place the focal point button on X=60% and Y=40% when it moves X=1180px and Y=1120px because page has 1000px of margin', async ({
+  test('should place the focal point button on X=36% and Y=24% when it moves X=1180px and Y=1120px because page has 1000px of margin', async ({
     page,
     browserName,
   }) => {
@@ -82,8 +82,8 @@ test.describe('basic with scroll', () => {
     const x = 1180;
     const y = 1120 - (browserName === 'firefox' ? REAL_FIREFOX_SCROLL_Y : scrollY);
     await page.mouse.move(x, y);
-    await expect(focalPointButton).toHaveAttribute('style', 'left: 60%; top: 40%; cursor: grabbing;');
+    await expect(focalPointButton).toHaveAttribute('style', 'left: 36%; top: 24%; cursor: grabbing;');
     await focalPointButton.dispatchEvent('mouseup');
-    await expect(focalPointButton).toHaveAttribute('style', 'left: 60%; top: 40%; cursor: grab;');
+    await expect(focalPointButton).toHaveAttribute('style', 'left: 36%; top: 24%; cursor: grab;');
   });
 });

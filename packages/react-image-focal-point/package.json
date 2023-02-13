@@ -20,7 +20,7 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development run-p \"build:js -- --watch\" \"types -- --watch\"",
     "start:e2e-web-app": "cd ../e2e-react-web-app && npm run start",
-    "build": "npm run clean && npm run build:js  && npm run types",
+    "build": "npm run clean && npm run build:js && npm run types",
     "build:js": "vite build",
     "types": "tsc --emitDeclarationOnly",
     "clean": "rimraf dist",
