@@ -1,7 +1,7 @@
 interface Props {
   setX: (x: number) => void;
   setY: (y: number) => void;
-  boundingRectangle: DOMRect;
+  container: HTMLDivElement;
   canMove: boolean;
   onChange: (x: number, y: number) => void;
 }
@@ -15,9 +15,10 @@ const parseToPercentage = (value: number, max: number) => Math.min(Math.max((val
 export const onMove = (props: Props) => e => {
   if (props.canMove) {
     const event = e as MouseEvent;
+    const containerBoundingRectangle = props.container.getBoundingClientRect();
+    const xPixels = event.clientX - containerBoundingRectangle.left;
+    const yPixels = event.clientY - containerBoundingRectangle.top;
     const currentTarget = event.currentTarget as HTMLDivElement;
-    const xPixels = event.pageX - props.boundingRectangle.left;
-    const yPixels = event.pageY - props.boundingRectangle.top;
     const x = parseToPercentage(xPixels, currentTarget.clientWidth);
     const y = parseToPercentage(yPixels, currentTarget.clientHeight);
     props.setX(x);

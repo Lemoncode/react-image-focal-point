@@ -1,8 +1,8 @@
 {
   "extends": "@lemoncode/config/tsconfig/react.json",
   "compilerOptions": {
-    "outDir": "dist",
+    "outDir": "dist"
   },
   "include": ["./src", "./vite-env.d.ts"],
-  "exclude": ["dist", "build", "node_modules"]
+  "exclude": ["dist", "node_modules", "src/**/*.spec.ts", "src/**/*.spec.tsx"]
 }

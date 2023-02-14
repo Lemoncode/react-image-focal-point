@@ -1,5 +1,5 @@
+import React from 'react';
 import { render, screen } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
 import { ImageFocalPoint, ImageFocalPointProps } from './image-focal-point.component';
 
 describe('focal-point/focal-point.component specs', () => {

@@ -11,16 +11,9 @@ const DEFAULT_PERCENTAGE = 50;
 
 export const useFocalPoint = (props: Props) => {
   const ref = React.useRef<HTMLDivElement>(null);
-  const boundingRectangle = React.useRef<DOMRect | null>(null);
   const [x, setX] = React.useState<number>(props.focalPoint?.x ?? DEFAULT_PERCENTAGE);
   const [y, setY] = React.useState<number>(props.focalPoint?.y ?? DEFAULT_PERCENTAGE);
   const [canMove, setCanMove] = React.useState(false);
-
-  React.useEffect(() => {
-    if (ref.current) {
-      boundingRectangle.current = ref.current.getBoundingClientRect();
-    }
-  }, [ref]);
 
   return {
     ref,
@@ -29,7 +22,7 @@ export const useFocalPoint = (props: Props) => {
     onMove: onMove({
       setX,
       setY,
-      boundingRectangle: boundingRectangle.current!,
+      container: ref.current!,
       onChange: (x, y) => props.onChange({ x, y }),
       canMove,
     }),

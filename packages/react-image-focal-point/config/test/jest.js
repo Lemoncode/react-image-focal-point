@@ -1,4 +1,4 @@
-import baseConfig from '@lemoncode/config/test/jest/jest.js';
+import baseConfig from '@lemoncode/config/test/unit/jest.js';
 
 export default {
   ...baseConfig,
