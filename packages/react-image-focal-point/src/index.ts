@@ -1,2 +1,2 @@
-export * from './image-focal-point.component';
-export * from './image-focal-point.vm';
+export { ImageFocalPoint, type ImageFocalPointProps } from './image-focal-point.component';
+export type { FocalPoint } from './image-focal-point.vm';

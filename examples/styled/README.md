@@ -13,14 +13,13 @@ import { ImageFocalPoint } from '@lemoncode/react-image-focal-point';
 const App = () => {
   return (
     <ImageFocalPoint
-       src="your-image-src"
-       onChange={(newFocalPoint) => {
-         // Whatever you want to do when the user clicks on the image
-       }}
-     />
+      src="your-image-src"
+      onChange={newFocalPoint => {
+        // Whatever you want to do when the user clicks on the image
+      }}
+    />
   );
-}
-
+};
 ```
 
 Create a css file and provide some styles to the root component:
@@ -32,7 +31,6 @@ _app.css_
   width: 500px;
   height: 500px;
 }
-
 ```
 
 Use it:
@@ -119,4 +117,3 @@ const App = () => {
     height="36"
     />
   </a>
-
