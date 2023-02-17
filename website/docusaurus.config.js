@@ -4,18 +4,20 @@
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
+const organizationName = 'lemoncode';
+const projectName = 'react-image-focal-point';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'React Image Focal Point',
   tagline: 'Image focal point component for React',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  // TODO.
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
-  organizationName: 'lemoncode',
-  projectName: 'react-image-focal-point',
+  url: `https://${organizationName}.github.io`,
+  baseUrl: `/${projectName}`,
+  organizationName,
+  projectName,
+  trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   i18n: {
@@ -45,7 +47,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // TODO: Update image
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/todo-social-card.jpg',
       navbar: {
         title: 'React Image Focal Point',
         logo: {
@@ -81,6 +83,14 @@ const config = {
               {
                 label: 'Getting Started',
                 to: '/docs/getting-started',
+              },
+              {
+                label: 'Examples',
+                to: '/docs/examples/basic',
+              },
+              {
+                label: 'API',
+                to: '/docs/api/reference',
               },
             ],
           },

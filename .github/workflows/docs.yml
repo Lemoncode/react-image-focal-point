@@ -1,0 +1,46 @@
+name: Publish Docs
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - docs/**
+      - website/**
+      - .github/workflows/docs.yml
+
+jobs:
+  publish-docs:
+    runs-on: ubuntu-latest
+    environment:
+      name: Docs
+      url: https://lemoncode.github.io/react-image-focal-point
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Add NPM registry
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: Use SSH key
+        run: |
+          mkdir -p ~/.ssh/
+          echo "${{secrets.SSH_PRIVATE_KEY}}" > ~/.ssh/id_rsa
+          sudo chmod 600 ~/.ssh/id_rsa
+
+      - name: Config git
+        run: |
+          git config --global user.email "docs@lemoncode.net"
+          git config --global user.name "Docs bot"
+
+      - name: Install
+        run: npm ci
+
+      - name: Publish Docs
+        run: |
+          cd ./website
+          npm run build
+          npm run deploy
