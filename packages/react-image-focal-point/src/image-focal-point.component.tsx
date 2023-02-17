@@ -24,8 +24,8 @@ export interface ImageFocalPointProps {
   focalPoint?: FocalPoint;
   alt?: string;
   labels?: LabelProps;
-  classes?: ClassesProps;
   className?: string;
+  classes?: ClassesProps;
 }
 
 export const ImageFocalPoint: React.FC<ImageFocalPointProps> = props => {
