@@ -2,53 +2,59 @@
 title: Controlled
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
 In this example you can check how to set an initial focal point value (by default it is show centered, but you can override it).
 
 ## How to apply this feature in your code
 
 Import the library styles and the component. Use it with minimal properties:
 
-```jsx
+```jsx title="app.tsx" showLineNumbers
+// highlight-start
 import '@lemoncode/react-image-focal-point/style.css';
 import { ImageFocalPoint } from '@lemoncode/react-image-focal-point';
+// highlight-end
 
 const App = () => {
   return (
+    // highlight-start
     <ImageFocalPoint
       src="your-image-src"
       onChange={newFocalPoint => {
         // Whatever you want to do when the user clicks on the image
       }}
     />
+    // highlight-end
   );
 };
 ```
 
 Create a state to provide the initial focal point values and store the new ones:
 
-```diff
+```jsx title="app.tsx" showLineNumbers
 import '@lemoncode/react-image-focal-point/style.css';
 import { ImageFocalPoint } from '@lemoncode/react-image-focal-point';
 
 const App = () => {
-+ const [focalPoint, setFocalPoint] = useState({ x: 5, y: 10 });
+  // highlight-next-line
+  const [focalPoint, setFocalPoint] = useState({ x: 5, y: 10 });
   return (
     <ImageFocalPoint
-       src="your-image-src"
-+      focalPoint={focalPoint}
-       onChange={(newFocalPoint) => {
-+        setFocalPoint(newFocalPoint);
-       }}
-     />
+      src="your-image-src"
+      // highlight-next-line
+      focalPoint={focalPoint}
+      onChange={newFocalPoint => {
+        // highlight-next-line
+        setFocalPoint(newFocalPoint);
+      }}
+    />
   );
-}
-
+};
 ```
 
 ## Live example
-
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
 
 <Tabs
   defaultValue="codesandbox"
