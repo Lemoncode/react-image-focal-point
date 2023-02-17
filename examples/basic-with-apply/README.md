@@ -12,8 +12,8 @@ This example is quite similar to the [basic example](https://github.com/Lemoncod
 </a> <a target="_blank" href="https://codesandbox.io/s/github/Lemoncode/react-image-focal-point/tree/main/examples/basic-with-apply">
   <img
     src="https://codesandbox.io/static/img/play-codesandbox.svg"
-    alt="Edit on StackBlitz"
-    title="Edit on StackBlitz"
+    alt="Edit on Codesandbox"
+    title="Edit on Codesandbox"
     height="36"
     />
   </a>

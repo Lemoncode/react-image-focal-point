@@ -1,0 +1,88 @@
+---
+title: Basic
+---
+
+Minimum example, here you can just drag the focal point and the example pictures focal point will be updated on real time.
+
+## How to apply this feature in your code
+
+Import the library styles and the component:
+
+```jsx
+import '@lemoncode/react-image-focal-point/style.css';
+import { ImageFocalPoint } from '@lemoncode/react-image-focal-point';
+
+const App = () => {
+  return (
+
+  );
+}
+
+```
+
+Then use the component:
+
+```diff
+import '@lemoncode/react-image-focal-point/style.css';
+import { ImageFocalPoint } from '@lemoncode/react-image-focal-point';
+
+const App = () => {
+  return (
++   <ImageFocalPoint
++     src="your-image-src"
++     onChange={(focalPoint) => {
++       // Whatever you want to do when the user clicks on the image
++     }}
++   />
+  );
+}
+
+```
+
+## Live example
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs
+  defaultValue="codesandbox"
+  values={[
+    { label: 'Codesandbox', value: 'codesandbox' },
+    { label: 'Stackblitz', value: 'stackblitz' },
+  ]}
+>
+  <TabItem value="stackblitz">
+    <a
+      target="_blank"
+      href="https://stackblitz.com/github/Lemoncode/react-image-focal-point/tree/main/examples/basic?embed=1&file=src%2Fapp.tsx"
+    >
+      <img
+        src="https://developer.stackblitz.com/img/open_in_stackblitz.svg"
+        alt="Edit on StackBlitz"
+        title="Edit on StackBlitz"
+      />
+    </a>
+    <iframe
+      src="https://stackblitz.com/github/Lemoncode/react-image-focal-point/tree/main/examples/basic?embed=1&file=src%2Fapp.tsx"
+      style={{ width: '100%', height: '500px', border: 0, borderRadius: '4px', overflow: 'hidden' }}
+    ></iframe>
+  </TabItem>
+  <TabItem value="codesandbox">
+    <a
+      target="_blank"
+      href="https://codesandbox.io/s/github/Lemoncode/react-image-focal-point/tree/main/examples/basic?file=/src/app.tsx"
+    >
+      <img
+        src="https://codesandbox.io/static/img/play-codesandbox.svg"
+        alt="Edit on Codesandbox"
+        title="Edit on Codesandbox"
+      />
+    </a>
+    <iframe
+      src="https://codesandbox.io/embed/github/Lemoncode/react-image-focal-point/tree/main/examples/basic?fontsize=14&hidenavigation=1&module=%2Fsrc%2Fapp.tsx&theme=dark&view=editor"
+      style={{ width: '100%', height: '500px', border: 0, borderRadius: '4px', overflow: 'hidden' }}
+      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+    ></iframe>
+  </TabItem>
+</Tabs>

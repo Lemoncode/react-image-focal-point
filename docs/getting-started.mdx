@@ -1,0 +1,88 @@
+---
+title: Getting Started
+description: How to install and use React Image Focal Point
+---
+
+## Installation
+
+Install _React Image Focal Point_ using your favorite package manager:
+
+```bash npm2yarn
+npm install @lemoncode/react-image-focal-point
+```
+
+## Quickstart
+
+Import the library styles and the component:
+
+```jsx title="app.jsx" showLineNumbers
+// highlight-start
+import '@lemoncode/react-image-focal-point/style.css';
+import { ImageFocalPoint } from '@lemoncode/react-image-focal-point';
+// highlight-end
+
+const App = () => {
+  return (
+    // Your app code
+  );
+};
+
+```
+
+Then use the component:
+
+```jsx title="app.jsx" showLineNumbers
+import '@lemoncode/react-image-focal-point/style.css';
+import { ImageFocalPoint } from '@lemoncode/react-image-focal-point';
+
+const App = () => {
+  return (
+    // highlight-start
+    <ImageFocalPoint
+      src="your-image-src" // Same src as <img> HTML element
+      onChange={focalPoint => {
+        // Whatever you want to do when the user clicks on the image
+      }}
+    />
+    // highlight-end
+  );
+};
+```
+
+:::tip
+
+As additional step, you can import the component styles in your bundler configuration file (e.g. `webpack.config.js`).
+
+```js title="webpack.config.js" showLineNumbers
+module.exports = {
+  // ...
+  entry: {
+    // ...
+    // highlight-next-line
+    vendorStyles: ['@lemoncode/react-image-focal-point/style.css'],
+  },
+  // ...
+};
+```
+
+And remove the import from the component file:
+
+```jsx title="app.jsx" showLineNumbers
+// highlight-next-line
+import { ImageFocalPoint } from '@lemoncode/react-image-focal-point';
+
+const App = () => {
+  return (
+    <ImageFocalPoint
+      src="your-image-src" // Same src as <img> HTML element
+      onChange={focalPoint => {
+        // Whatever you want to do when the user clicks on the image
+      }}
+    />
+  );
+};
+```
+
+Here you have a [Webpack entry point example](examples/webpack-entry-point).
+
+:::

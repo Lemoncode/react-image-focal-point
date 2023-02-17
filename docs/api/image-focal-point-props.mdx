@@ -1,0 +1,54 @@
+---
+title: ImageFocalPointProps
+---
+
+The `ImageFocalPointProps` is the TypeScript interface used by the [ImageFocalPoint](image-focal-point) component.
+
+:::note
+
+You can see the default values in [Props section](image-focal-point/#props).
+
+:::
+
+## Interface
+
+```typescript
+export interface ImageFocalPointProps {
+  src: string;
+  onChange: (focalPoint: FocalPoint) => void;
+  focalPoint?: FocalPoint;
+  alt?: string;
+  labels?: LabelProps;
+  className?: string;
+  classes?: ClassesProps;
+}
+```
+
+## Example of use
+
+The intention of exporting this interface is to be able to use it in other components, for example as a wrapper. The following example shows how to use the `ImageFocalPointProps` interface in a TypeScript project.
+
+```tsx title="wrapper.tsx" showLineNumbers
+import React from 'react';
+import {
+  ImageFocalPoint,
+  // highlight-next-line
+  ImageFocalPointProps,
+} from '@lemoncode/react-image-focal-point';
+
+// highlight-next-line
+interface Props extends ImageFocalPointProps {
+  // Whatever you want to add
+  title: string;
+}
+
+const Wrapper: React.FC<Props> = props => {
+  const { title, ...otherProps } = props;
+  return (
+    <>
+      <h3>{title}</h3>
+      <ImageFocalPoint {...otherProps} />
+    </>
+  );
+};
+```

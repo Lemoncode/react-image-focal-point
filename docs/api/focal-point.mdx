@@ -1,0 +1,49 @@
+---
+title: FocalPoint
+---
+
+The `FocalPoint` is the TypeScript interface that represents the focal point X and Y coordinates in percentage.
+
+:::note
+
+You can see the default value in [Props section](image-focal-point/#props).
+
+:::
+
+## Interface
+
+```typescript
+export interface FocalPoint {
+  x: number;
+  y: number;
+}
+```
+
+## Example of use
+
+The following example shows how to use the `FocalPoint` interface in a TypeScript project.
+
+```tsx showLineNumbers
+import '@lemoncode/react-image-focal-point/style.css';
+import {
+  ImageFocalPoint,
+  // highlight-next-line
+  FocalPoint,
+} from '@lemoncode/react-image-focal-point';
+
+const App = () => {
+  // highlight-next-line
+  const [focalPoint, setFocalPoint] = useState<FocalPoint>({ x: 5, y: 10 });
+  return (
+    <ImageFocalPoint
+      src="your-image-src"
+      // highlight-next-line
+      focalPoint={focalPoint}
+      onChange={newFocalPoint => {
+        // highlight-next-line
+        setFocalPoint(newFocalPoint);
+      }}
+    />
+  );
+};
+```

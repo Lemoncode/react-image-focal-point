@@ -1,0 +1,40 @@
+---
+title: ImageFocalPoint (Component)
+---
+
+The ImageFocalPoint component is the main file of the library. It is a wrapper of the HTML image element that allows you to drag and drop the focal point button on the image.
+
+## Internal HTML structure
+
+```html
+<div class="root">
+  <button class="focalPoint"></button>
+  <img class="image" />
+</div>
+```
+
+## Props
+
+| Name       | Type                                            | Default                        | Required | Description                                                                                                               |
+| ---------- | ----------------------------------------------- | ------------------------------ | -------- | ------------------------------------------------------------------------------------------------------------------------- |
+| src        | string                                          | -                              | &check;  | The image [source attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-src).                     |
+| onChange   | (focalPoint: [FocalPoint](focal-point)) => void | -                              | &check;  | Callback function that will be called when the user clicks on the focal point button and moves the cursor over the image. |
+| focalPoint | [FocalPoint](focal-point)                       | `{ x: 50, y: 50 }`             | -        | Initial focal point value in percentage.                                                                                  |
+| alt        | string                                          | -                              | -        | The image [alt attribute](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-alt).                        |
+| labels     | [LabelProps](#labelprops)                       | `{ focalPoint: 'Focal point'}` | -        | Labels to be used in the component.                                                                                       |
+| className  | string                                          | -                              | -        | CSS class name to be applied to the root element.                                                                         |
+| classes    | [ClassesProps](#classesprops)                   | -                              | -        | CSS class names to be applied to the component elements.                                                                  |
+
+## LabelProps
+
+| Name       | Type   | Default     | Required | Description                                 |
+| ---------- | ------ | ----------- | -------- | ------------------------------------------- |
+| focalPoint | string | Focal point | false    | Label to be used in the focal point button. |
+
+## ClassesProps
+
+| Name       | Type   | Default | Required | Description                                             |
+| ---------- | ------ | ------- | -------- | ------------------------------------------------------- |
+| root       | string | -       | false    | CSS class name to be applied to the root element.       |
+| focalPoint | string | -       | false    | CSS class name to be applied to the focal point button. |
+| image      | string | -       | false    | CSS class name to be applied to the image element.      |

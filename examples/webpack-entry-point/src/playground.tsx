@@ -15,7 +15,7 @@ export const Playground: React.FC<Props> = props => {
     <div className={classes.root}>
       <h1 className={classes.title}>Webpack entry point</h1>
       <p className={classes.description}>
-        This example is the same as the basic example, but using the webpack entry point to import the styles from the libray.
+        This example is the same as the basic example, but using the webpack entry point to import the library styles.
       </p>
       <h2 className={classes.focalPointSubtitle}>Image focal point</h2>
       <div className={classes.focalPoint}>{children}</div>

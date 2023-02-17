@@ -47,8 +47,8 @@ const App = () => {
 </a> <a target="_blank" href="https://codesandbox.io/s/github/Lemoncode/react-image-focal-point/tree/main/examples/basic">
   <img
     src="https://codesandbox.io/static/img/play-codesandbox.svg"
-    alt="Edit on StackBlitz"
-    title="Edit on StackBlitz"
+    alt="Edit on Codesandbox"
+    title="Edit on Codesandbox"
     height="36"
     />
   </a>

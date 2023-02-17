@@ -1,6 +1,6 @@
 # Webpack entry point
 
-This example is the same as the [basic example](https://github.com/Lemoncode/react-image-focal-point/tree/main/examples/basic), but using the webpack entry point to import the styles from the libray.
+This example is the same as the [basic example](https://github.com/Lemoncode/react-image-focal-point/tree/main/examples/basic), but using the webpack entry point to import the library styles.
 
 ## How to apply this feature in your code
 
@@ -46,8 +46,8 @@ module.exports = {
 </a> <a target="_blank" href="https://codesandbox.io/s/github/Lemoncode/react-image-focal-point/tree/main/examples/webpack-entry-point">
   <img
     src="https://codesandbox.io/static/img/play-codesandbox.svg"
-    alt="Edit on StackBlitz"
-    title="Edit on StackBlitz"
+    alt="Edit on Codesandbox"
+    title="Edit on Codesandbox"
     height="36"
     />
   </a>
