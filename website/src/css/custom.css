@@ -5,13 +5,13 @@
   Learn more about overriding Docusaurus/Infima CSS variables here: https://docusaurus.io/docs/styling-layout#styling-your-site-with-infima
 */
 :root {
-  --ifm-color-primary: #2e5385;
-  --ifm-color-primary-dark: #294b78;
-  --ifm-color-primary-darker: #274771;
-  --ifm-color-primary-darkest: #203a5d;
-  --ifm-color-primary-light: #335b92;
-  --ifm-color-primary-lighter: #355f99;
-  --ifm-color-primary-lightest: #3c6cad;
+  --ifm-color-primary: #005aad;
+  --ifm-color-primary-dark: #00519c;
+  --ifm-color-primary-darker: #004c93;
+  --ifm-color-primary-darkest: #003f79;
+  --ifm-color-primary-light: #0063be;
+  --ifm-color-primary-lighter: #0067c7;
+  --ifm-color-primary-lightest: #0075e1;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
