@@ -7,12 +7,16 @@ const imageContainer = {
 
 describe('focal-point/onMove specs', () => {
   describe('base case', () => {
-    const container = {
-      getBoundingClientRect: jest.fn().mockReturnValue({
-        top: 0,
-        left: 0,
-      }),
-    } as unknown as HTMLDivElement;
+    let container;
+
+    beforeEach(() => {
+      container = {
+        getBoundingClientRect: jest.fn().mockReturnValue({
+          top: 0,
+          left: 0,
+        }),
+      } as unknown as HTMLDivElement;
+    });
 
     it('should does not call to setX, setY nor onChange when it feeds canMove equals false', () => {
       // Arrange
@@ -252,12 +256,16 @@ describe('focal-point/onMove specs', () => {
   });
 
   describe('image container inside some page an its location is not 0/0', () => {
-    const container = {
-      getBoundingClientRect: jest.fn().mockReturnValue({
-        top: 400,
-        left: 400,
-      }),
-    } as unknown as HTMLDivElement;
+    let container;
+
+    beforeEach(() => {
+      container = {
+        getBoundingClientRect: jest.fn().mockReturnValue({
+          top: 400,
+          left: 400,
+        }),
+      } as unknown as HTMLDivElement;
+    });
 
     it('should does not call to setX, setY nor onChange when it feeds canMove equals false', () => {
       // Arrange
