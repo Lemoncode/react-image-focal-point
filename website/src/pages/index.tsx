@@ -6,8 +6,16 @@ const Home: React.FC = () => {
   return (
     <Layout description="React Image Focal Point provides a simple way to center a cropped image on a specific point.">
       <Header />
-      <main>
-        <p>TODO: Add youtube video</p>
+      <main style={{ display: 'flex', justifyContent: 'center', alignContent: 'center', flex: 1 }}>
+        <p
+          style={{
+            alignSelf: 'center',
+          }}
+          className="hero__subtitle"
+        >
+          {' '}
+          Video tutorial comming soon
+        </p>
       </main>
     </Layout>
   );
