@@ -13,7 +13,6 @@ const Home: React.FC = () => {
           }}
           className="hero__subtitle"
         >
-          {' '}
           Video tutorial comming soon
         </p>
       </main>
