@@ -15,7 +15,7 @@ export const Playground: React.FC<Props> = props => {
     <div className={classes.root}>
       <h1 className={classes.title}>Basic</h1>
       <p className={classes.description}>
-        Minimum example, here you can just drag the focal point and the example pictures focal point will be updated on
+        Minimal example, here you can just drag the focal point and the example pictures focal point will be updated on
         real time.
       </p>
       <h2 className={classes.focalPointSubtitle}>Image focal point</h2>

@@ -5,7 +5,7 @@ title: Webpack entry point
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
-This example is the same as the [basic example](basic), but using the webpack entry point to import the library styles.
+This example is the same as the [basic example](basic), but using webpack entry point in order to import the library (you can use the entry section of your _webpack.config.js_ and add there the path to the library css file instead of having to add it in your main HTML / JS file in your app.
 
 ## How to apply this feature in your code
 
@@ -20,7 +20,7 @@ const App = () => {
     <ImageFocalPoint
       src="your-image-src"
       onChange={newFocalPoint => {
-        // Whatever you want to do when the user clicks on the image
+        // Add here your code to do whatever you want to when the user drags on the focal point
       }}
     />
   );

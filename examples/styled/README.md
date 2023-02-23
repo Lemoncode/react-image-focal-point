@@ -1,6 +1,6 @@
 # Styled
 
-This example shows how to provide styles to the image focal point component.
+This example shows how to override the standard component styles with your custom ones and apply them to the image focal point component.
 
 ## How to apply this feature in your code
 
@@ -15,7 +15,7 @@ const App = () => {
     <ImageFocalPoint
       src="your-image-src"
       onChange={newFocalPoint => {
-        // Whatever you want to do when the user clicks on the image
+        // Add here your code to do whatever you want to when the user drags on the focal point
       }}
     />
   );
@@ -46,7 +46,7 @@ const App = () => {
 +      className="image-focal-point"
        src="your-image-src"
        onChange={(newFocalPoint) => {
-         // Whatever you want to do when the user clicks on the image
+         // Add here your code to do whatever you want to when the user drags on the focal point
        }}
      />
   );
@@ -92,7 +92,7 @@ const App = () => {
 +      }}
        src="your-image-src"
        onChange={(newFocalPoint) => {
-         // Whatever you want to do when the user clicks on the image
+         // Add here your code to do whatever you want to when the user drags on the focal point
        }}
      />
   );
