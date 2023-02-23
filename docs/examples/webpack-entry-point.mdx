@@ -1,0 +1,87 @@
+---
+title: Webpack entry point
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+This example is the same as the [basic example](basic), but using webpack entry point in order to import the library (you can use the entry section of your _webpack.config.js_ and add there the path to the library css file instead of having to add it in your main HTML / JS file in your app.
+
+## How to apply this feature in your code
+
+Import the library component in your _app_:
+
+```jsx title="app.tsx" showLineNumbers
+// highlight-next-line
+import { ImageFocalPoint } from '@lemoncode/react-image-focal-point';
+
+const App = () => {
+  return (
+    <ImageFocalPoint
+      src="your-image-src"
+      onChange={newFocalPoint => {
+        // Add here your code to do whatever you want to when the user drags on the focal point
+      }}
+    />
+  );
+};
+```
+
+Import the library styles in your webpack entry point:
+
+```javascript title="webpack.config.js" showLineNumbers
+module.exports = {
+  // ...
+  entry: {
+    index: './index.tsx',
+    // highlight-next-line
+    vendorStyles: ['@lemoncode/react-image-focal-point/style.css'],
+  },
+  // ...
+};
+```
+
+## Live example
+
+<Tabs
+  defaultValue="codesandbox"
+  values={[
+    { label: 'Codesandbox', value: 'codesandbox' },
+    { label: 'Stackblitz', value: 'stackblitz' },
+  ]}
+>
+  <TabItem value="stackblitz">
+    <a
+      target="_blank"
+      href="https://stackblitz.com/github/Lemoncode/react-image-focal-point/tree/main/examples/webpack-entry-point?embed=1&file=src%2Fapp.tsx"
+    >
+      <img
+        src="https://developer.stackblitz.com/img/open_in_stackblitz.svg"
+        alt="Edit on StackBlitz"
+        title="Edit on StackBlitz"
+      />
+    </a>
+    <iframe
+      src="https://stackblitz.com/github/Lemoncode/react-image-focal-point/tree/main/examples/webpack-entry-point?embed=1&file=src%2Fapp.tsx"
+      style={{ width: '100%', height: '500px', border: 0, borderRadius: '4px', overflow: 'hidden' }}
+    ></iframe>
+  </TabItem>
+  <TabItem value="codesandbox">
+    <a
+      target="_blank"
+      href="https://codesandbox.io/s/github/Lemoncode/react-image-focal-point/tree/main/examples/webpack-entry-point?file=/src/app.tsx"
+    >
+      <img
+        src="https://codesandbox.io/static/img/play-codesandbox.svg"
+        alt="Edit on Codesandbox"
+        title="Edit on Codesandbox"
+      />
+    </a>
+    <iframe
+      src="https://codesandbox.io/embed/github/Lemoncode/react-image-focal-point/tree/main/examples/webpack-entry-point?fontsize=14&hidenavigation=1&module=%2Fsrc%2Fapp.tsx&theme=dark&view=editor"
+      style={{ width: '100%', height: '500px', border: 0, borderRadius: '4px', overflow: 'hidden' }}
+      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+    ></iframe>
+  </TabItem>
+</Tabs>

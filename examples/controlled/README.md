@@ -15,7 +15,7 @@ const App = () => {
     <ImageFocalPoint
       src="your-image-src"
       onChange={newFocalPoint => {
-        // Whatever you want to do when the user clicks on the image
+        // Add here your code to do whatever you want to when the user drags on the focal point
       }}
     />
   );
@@ -53,8 +53,8 @@ const App = () => {
 </a> <a target="_blank" href="https://codesandbox.io/s/github/Lemoncode/react-image-focal-point/tree/main/examples/controlled">
   <img
     src="https://codesandbox.io/static/img/play-codesandbox.svg"
-    alt="Edit on StackBlitz"
-    title="Edit on StackBlitz"
+    alt="Edit on Codesandbox"
+    title="Edit on Codesandbox"
     height="36"
     />
   </a>

@@ -13,10 +13,9 @@ export const Playground: React.FC<Props> = props => {
 
   return (
     <div className={classes.root}>
-      <h1 className={classes.title}>Styled</h1>
+      <h1 className={classes.title}>Webpack entry point</h1>
       <p className={classes.description}>
-        This example shows how to override the standard component styles with your custom ones and apply them to the
-        image focal point component.
+        This example is the same as the basic example, but using the webpack entry point to import the library styles.
       </p>
       <h2 className={classes.focalPointSubtitle}>Image focal point</h2>
       <div className={classes.focalPoint}>{children}</div>

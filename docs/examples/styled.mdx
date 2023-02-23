@@ -1,4 +1,9 @@
-# Styled
+---
+title: Styled
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 This example shows how to override the standard component styles with your custom ones and apply them to the image focal point component.
 
@@ -102,18 +107,47 @@ const App = () => {
 
 > Note: You can also provide the root styles directly to the classes object instead of using the className prop.
 
-<a target="_blank" href="https://stackblitz.com/github/Lemoncode/react-image-focal-point/tree/main/examples/styled">
-  <img
-    src="https://developer.stackblitz.com/img/open_in_stackblitz.svg"
-    alt="Edit on StackBlitz"
-    title="Edit on StackBlitz"
-    height="36"
-  />
-</a> <a target="_blank" href="https://codesandbox.io/s/github/Lemoncode/react-image-focal-point/tree/main/examples/styled">
-  <img
-    src="https://codesandbox.io/static/img/play-codesandbox.svg"
-    alt="Edit on Codesandbox"
-    title="Edit on Codesandbox"
-    height="36"
-    />
-  </a>
+## Live example
+
+<Tabs
+  defaultValue="codesandbox"
+  values={[
+    { label: 'Codesandbox', value: 'codesandbox' },
+    { label: 'Stackblitz', value: 'stackblitz' },
+  ]}
+>
+  <TabItem value="stackblitz">
+    <a
+      target="_blank"
+      href="https://stackblitz.com/github/Lemoncode/react-image-focal-point/tree/main/examples/styled?embed=1&file=src%2Fapp.tsx"
+    >
+      <img
+        src="https://developer.stackblitz.com/img/open_in_stackblitz.svg"
+        alt="Edit on StackBlitz"
+        title="Edit on StackBlitz"
+      />
+    </a>
+    <iframe
+      src="https://stackblitz.com/github/Lemoncode/react-image-focal-point/tree/main/examples/styled?embed=1&file=src%2Fapp.tsx"
+      style={{ width: '100%', height: '500px', border: 0, borderRadius: '4px', overflow: 'hidden' }}
+    ></iframe>
+  </TabItem>
+  <TabItem value="codesandbox">
+    <a
+      target="_blank"
+      href="https://codesandbox.io/s/github/Lemoncode/react-image-focal-point/tree/main/examples/styled?file=/src/app.tsx"
+    >
+      <img
+        src="https://codesandbox.io/static/img/play-codesandbox.svg"
+        alt="Edit on Codesandbox"
+        title="Edit on Codesandbox"
+      />
+    </a>
+    <iframe
+      src="https://codesandbox.io/embed/github/Lemoncode/react-image-focal-point/tree/main/examples/styled?fontsize=14&hidenavigation=1&module=%2Fsrc%2Fapp.tsx&theme=dark&view=editor"
+      style={{ width: '100%', height: '500px', border: 0, borderRadius: '4px', overflow: 'hidden' }}
+      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+    ></iframe>
+  </TabItem>
+</Tabs>

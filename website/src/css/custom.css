@@ -1,0 +1,28 @@
+/*
+  This file is used to override the default Infima CSS variables.
+  Learn more about them here: https://infima.dev/docs/getting-started/introduction
+  Learn more about CSS variables here: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
+  Learn more about overriding Docusaurus/Infima CSS variables here: https://docusaurus.io/docs/styling-layout#styling-your-site-with-infima
+*/
+:root {
+  --ifm-color-primary: #005aad;
+  --ifm-color-primary-dark: #00519c;
+  --ifm-color-primary-darker: #004c93;
+  --ifm-color-primary-darkest: #003f79;
+  --ifm-color-primary-light: #0063be;
+  --ifm-color-primary-lighter: #0067c7;
+  --ifm-color-primary-lightest: #0075e1;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #78c2a4;
+  --ifm-color-primary-dark: #62b895;
+  --ifm-color-primary-darker: #58b38e;
+  --ifm-color-primary-darkest: #449776;
+  --ifm-color-primary-light: #8eccb3;
+  --ifm-color-primary-lighter: #98d1ba;
+  --ifm-color-primary-lightest: #b9dfd0;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.4);
+}

@@ -1,6 +1,6 @@
 # Basic
 
-Minimum example, here you can just drag the focal point and the example pictures focal point will be updated on real time.
+Minimal example, here you can just drag the focal point and the example pictures focal point will be updated on real time.
 
 ## How to apply this feature in your code
 
@@ -29,7 +29,7 @@ const App = () => {
 +   <ImageFocalPoint
 +     src="your-image-src"
 +     onChange={(focalPoint) => {
-+       // Whatever you want to do when the user clicks on the image
++       // Add here your code to do whatever you want to when the user drags on the focal point
 +     }}
 +   />
   );
@@ -47,8 +47,8 @@ const App = () => {
 </a> <a target="_blank" href="https://codesandbox.io/s/github/Lemoncode/react-image-focal-point/tree/main/examples/basic">
   <img
     src="https://codesandbox.io/static/img/play-codesandbox.svg"
-    alt="Edit on StackBlitz"
-    title="Edit on StackBlitz"
+    alt="Edit on Codesandbox"
+    title="Edit on Codesandbox"
     height="36"
     />
   </a>
