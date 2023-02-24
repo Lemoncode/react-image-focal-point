@@ -40,8 +40,6 @@ Video tutorial comming soon
 
 <hr />
 
-<!-- https://github.com/badges/shields -->
-
 ![npm](https://img.shields.io/npm/v/@lemoncode/react-image-focal-point?style=plastic) ![npm bundle size](https://img.shields.io/bundlephobia/min/@lemoncode/react-image-focal-point?style=plastic) ![npm downloads](https://img.shields.io/npm/dw/@lemoncode/react-image-focal-point?style=plastic) ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/lemoncode/react-image-focal-point/ci.yml?branch=develop&style=plastic)
 
 ![GitHub license](https://img.shields.io/github/license/lemoncode/react-image-focal-point?style=plastic) ![GitHub issues](https://img.shields.io/github/issues/lemoncode/react-image-focal-point?style=plastic) ![GitHub pull requests](https://img.shields.io/github/issues-pr/lemoncode/react-image-focal-point?style=plastic) ![GitHub last commit](https://img.shields.io/github/last-commit/lemoncode/react-image-focal-point?style=plastic)
