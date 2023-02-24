@@ -43,4 +43,4 @@ jobs:
         run: |
           cd ./website
           npm run build
-          npm run deploy
+          USE_SSH=true npm run deploy
