@@ -10,9 +10,8 @@ const projectName = 'react-image-focal-point';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'React Image Focal Point',
-  tagline: 'Image focal point component for React',
+  tagline: 'Let the user set the picture focal point just by visually dragging and dropping on top of the selected image.',
   favicon: 'img/favicon.ico',
-
   url: `https://${organizationName}.github.io`,
   baseUrl: `/${projectName}`,
   organizationName,
@@ -107,13 +106,16 @@ const config = {
             title: 'More',
             items: [
               {
-                // TODO: Update blog link
-                label: 'Blog',
-                to: '/',
-              },
-              {
                 label: 'GitHub',
                 href: 'https://github.com/Lemoncode/react-image-focal-point',
+              },
+              {
+                label: 'Blog (ES)',
+                href: 'https://lemoncode.net/lemoncode-blog',
+              },
+              {
+                label: 'Blog (EN)',
+                href: 'https://www.basefactor.com/blog',
               },
             ],
           },
