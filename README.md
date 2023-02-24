@@ -5,13 +5,13 @@
       height="100"
       width="100"
       alt="logo"
-      src="https://raw.githubusercontent.com/lemoncode/react-image-focal-point/develop/website/static/img/logo.svg"
+      src="https://raw.githubusercontent.com/lemoncode/react-image-focal-point/main/website/static/img/logo.svg"
     />
   </a>
 
   <br/>
 
-  <p>You can just drag and drop a focal point button on top of your image and enhance your cropped images.</p>
+  <p>Let the user set the picture focal point just by visually dragging and dropping on top of the selected image.</p>
 
   <h2>Live Demo</h2>
   <br/>
@@ -40,7 +40,7 @@ Video tutorial comming soon
 
 <hr />
 
-![npm](https://img.shields.io/npm/v/@lemoncode/react-image-focal-point?style=plastic) ![npm bundle size](https://img.shields.io/bundlephobia/min/@lemoncode/react-image-focal-point?style=plastic) ![npm downloads](https://img.shields.io/npm/dw/@lemoncode/react-image-focal-point?style=plastic) ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/lemoncode/react-image-focal-point/ci.yml?branch=develop&style=plastic)
+![npm](https://img.shields.io/npm/v/@lemoncode/react-image-focal-point?style=plastic) ![npm bundle size](https://img.shields.io/bundlephobia/min/@lemoncode/react-image-focal-point?style=plastic) ![npm downloads](https://img.shields.io/npm/dw/@lemoncode/react-image-focal-point?style=plastic) ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/lemoncode/react-image-focal-point/ci.yml?branch=main&style=plastic)
 
 ![GitHub license](https://img.shields.io/github/license/lemoncode/react-image-focal-point?style=plastic) ![GitHub issues](https://img.shields.io/github/issues/lemoncode/react-image-focal-point?style=plastic) ![GitHub pull requests](https://img.shields.io/github/issues-pr/lemoncode/react-image-focal-point?style=plastic) ![GitHub last commit](https://img.shields.io/github/last-commit/lemoncode/react-image-focal-point?style=plastic)
 
@@ -116,7 +116,7 @@ You'll find runnable examples in the [docs site](https://lemoncode.github.io/rea
 
 ## Key Features
 
-- You can just drag and drop a focal point button on top of your image and enhance your cropped images.
+- Let the user set the picture focal point just by visually dragging and dropping on top of the selected image.
 
 - You can use it as a controlled or uncontrolled component.
 

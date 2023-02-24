@@ -10,7 +10,7 @@ const projectName = 'react-image-focal-point';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'React Image Focal Point',
-  tagline: 'You can just drag and drop a focal point button on top of your image and enhance your cropped images.',
+  tagline: 'Let the user set the picture focal point just by visually dragging and dropping on top of the selected image.',
   favicon: 'img/favicon.ico',
   url: `https://${organizationName}.github.io`,
   baseUrl: `/${projectName}`,
