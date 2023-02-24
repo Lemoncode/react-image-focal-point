@@ -1,5 +1,6 @@
 {
   "name": "basic-example",
+  "private": true,
   "scripts": {
     "start": "vite --open"
   },

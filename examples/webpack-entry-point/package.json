@@ -1,5 +1,6 @@
 {
   "name": "webpack-entry-point-example",
+  "private": true,
   "scripts": {
     "start": "webpack serve --open --mode development"
   },
