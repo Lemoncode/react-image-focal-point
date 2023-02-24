@@ -1,0 +1,153 @@
+---
+title: Styled
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+This example shows how to override the standard component styles with your custom ones and apply them to the image focal point component.
+
+## How to apply this feature in your code
+
+Import the library styles and the component. Use it with minimal properties:
+
+```jsx
+import '@lemoncode/react-image-focal-point/style.css';
+import { ImageFocalPoint } from '@lemoncode/react-image-focal-point';
+
+const App = () => {
+  return (
+    <ImageFocalPoint
+      src="your-image-src"
+      onChange={newFocalPoint => {
+        // Add here your code to do whatever you want to when the user drags on the focal point
+      }}
+    />
+  );
+};
+```
+
+Create a css file and provide some styles to the root component:
+
+_app.css_
+
+```css
+.image-focal-point {
+  width: 500px;
+  height: 500px;
+}
+```
+
+Use it:
+
+```diff
+import '@lemoncode/react-image-focal-point/style.css';
+import { ImageFocalPoint } from '@lemoncode/react-image-focal-point';
++ import './app.css';
+
+const App = () => {
+  return (
+    <ImageFocalPoint
++      className="image-focal-point"
+       src="your-image-src"
+       onChange={(newFocalPoint) => {
+         // Add here your code to do whatever you want to when the user drags on the focal point
+       }}
+     />
+  );
+}
+
+```
+
+You can also customize the look & feel of the the image and the focal point by adding custom styles:
+
+_app.css_
+
+```diff
+.image-focal-point {
+  width: 500px;
+  height: 500px;
+}
+
++ .image {
++   border-radius: 10px;
++ }
+
++ .focal-point {
++   background-color: rgba(255, 0, 0, 0.4);
++ }
+
+```
+
+Use it:
+
+```diff
+import '@lemoncode/react-image-focal-point/style.css';
+import { ImageFocalPoint } from '@lemoncode/react-image-focal-point';
+import './app.css';
+
+const App = () => {
+  return (
+    <ImageFocalPoint
+-      className="image-focal-point"
++      classes={{
++        root: 'image-focal-point',
++        image: 'image',
++        focalPoint: 'focal-point',
++      }}
+       src="your-image-src"
+       onChange={(newFocalPoint) => {
+         // Add here your code to do whatever you want to when the user drags on the focal point
+       }}
+     />
+  );
+}
+
+```
+
+> Note: You can also provide the root styles directly to the classes object instead of using the className prop.
+
+## Live example
+
+<Tabs
+  defaultValue="codesandbox"
+  values={[
+    { label: 'Codesandbox', value: 'codesandbox' },
+    { label: 'Stackblitz', value: 'stackblitz' },
+  ]}
+>
+  <TabItem value="stackblitz">
+    <a
+      target="_blank"
+      href="https://stackblitz.com/github/Lemoncode/react-image-focal-point/tree/main/examples/styled?embed=1&file=src%2Fapp.tsx"
+    >
+      <img
+        src="https://developer.stackblitz.com/img/open_in_stackblitz.svg"
+        alt="Edit on StackBlitz"
+        title="Edit on StackBlitz"
+      />
+    </a>
+    <iframe
+      src="https://stackblitz.com/github/Lemoncode/react-image-focal-point/tree/main/examples/styled?embed=1&file=src%2Fapp.tsx"
+      style={{ width: '100%', height: '500px', border: 0, borderRadius: '4px', overflow: 'hidden' }}
+    ></iframe>
+  </TabItem>
+  <TabItem value="codesandbox">
+    <a
+      target="_blank"
+      href="https://codesandbox.io/s/github/Lemoncode/react-image-focal-point/tree/main/examples/styled?file=/src/app.tsx"
+    >
+      <img
+        src="https://codesandbox.io/static/img/play-codesandbox.svg"
+        alt="Edit on Codesandbox"
+        title="Edit on Codesandbox"
+      />
+    </a>
+    <iframe
+      src="https://codesandbox.io/embed/github/Lemoncode/react-image-focal-point/tree/main/examples/styled?fontsize=14&hidenavigation=1&module=%2Fsrc%2Fapp.tsx&theme=dark&view=editor"
+      style={{ width: '100%', height: '500px', border: 0, borderRadius: '4px', overflow: 'hidden' }}
+      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+    ></iframe>
+  </TabItem>
+</Tabs>

@@ -34,3 +34,6 @@ yarn-error.log*
 .turbo
 
 stats.html
+test-results/
+playwright-report/
+playwright/.cache/

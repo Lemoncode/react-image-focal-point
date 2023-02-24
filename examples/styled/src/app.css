@@ -1,0 +1,12 @@
+.image-focal-point {
+  width: 500px;
+  height: 500px;
+}
+
+.image {
+  border-radius: 10px;
+}
+
+.focal-point {
+  background-color: rgba(255, 0, 0, 0.4);
+}

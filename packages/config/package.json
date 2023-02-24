@@ -1,0 +1,9 @@
+{
+  "name": "@lemoncode/config",
+  "private": true,
+  "files": [
+    "test",
+    "tsconfig"
+  ],
+  "type": "module"
+}
