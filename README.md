@@ -8,9 +8,10 @@
       src="https://raw.githubusercontent.com/lemoncode/react-image-focal-point/develop/website/static/img/logo.svg"
     />
   </a>
-  <p>You can just drag and drop a focal point button on top of your image and enhance your cropped images.</p>
 
   <br/>
+
+  <p>You can just drag and drop a focal point button on top of your image and enhance your cropped images.</p>
 
   <h2>Live Demo</h2>
   <br/>
@@ -29,10 +30,6 @@
     height="36"
     />
   </a>
-
-<br />
-
-<hr />
 
 <br />
 
