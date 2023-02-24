@@ -1,6 +1,6 @@
 {
   "name": "@lemoncode/react-image-focal-point",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Image focal point component for React",
   "private": false,
   "files": [
