@@ -45,8 +45,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // TODO: Update image
-      image: 'img/todo-social-card.jpg',
+      image: 'img/logo.png',
       navbar: {
         title: 'React Image Focal Point',
         logo: {
