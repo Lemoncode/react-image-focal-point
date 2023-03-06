@@ -45,7 +45,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/logo.png',
+      image: 'img/social-card.jpg',
       navbar: {
         title: 'React Image Focal Point',
         logo: {
