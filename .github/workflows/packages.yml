@@ -6,7 +6,7 @@ on:
       - main
     paths-ignore:
       - docs/**
-      - website/**""
+      - website/**
       - .github/workflows/docs.yml
 
 jobs:
