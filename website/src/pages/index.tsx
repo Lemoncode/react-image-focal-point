@@ -9,7 +9,7 @@ const Home: React.FC = () => {
       <Header />
       <main className={classes.root}>
         <div className={classes['video-container']}>
-          <Video className={classes.video} id="29Rr7at3sJY" />
+          <Video id="29Rr7at3sJY" />
         </div>
       </main>
     </Layout>
