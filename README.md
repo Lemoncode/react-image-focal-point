@@ -34,7 +34,7 @@
   <br />
   <br />
 
-Video tutorial comming soon
+[![React image focal point video tutorial](https://img.youtube.com/vi/29Rr7at3sJY/0.jpg)](https://www.youtube.com/watch?v=29Rr7at3sJY)
 
 </div>
 
