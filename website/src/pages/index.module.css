@@ -1,0 +1,12 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--ifm-image-alignment-padding);
+}
+
+.video-container {
+  max-width: 980px;
+  width: 100%;
+}
