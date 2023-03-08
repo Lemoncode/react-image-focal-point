@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "build": "turbo run build",
-    "start": "turbo run start --continue --filter=./examples/**/* --filter=./packages/**/* -- --open",
+    "start": "turbo run start --continue --filter=./examples/**/* --filter=./packages/**/* --filter=!e2e-react-web-app -- --open",
     "start:docs": "turbo run start --continue --filter=./website",
     "test": "turbo run test",
     "test:e2e": "turbo run test:e2e",
