@@ -2,7 +2,7 @@
   "name": "styled-example",
   "private": true,
   "scripts": {
-    "start": "vite --open"
+    "start": "vite"
   },
   "repository": {
     "type": "git",
