@@ -42,6 +42,8 @@ export const ImageFocalPoint: React.FC<ImageFocalPointProps> = props => {
         className={clsx(classes.focalPoint, props?.classes?.focalPoint)}
         onMouseDown={() => setCanMove(true)}
         onMouseUp={() => setCanMove(false)}
+        onTouchStart={() => setCanMove(true)}
+        onMouseDown={() => setCanMove(false)}
       />
       <img
         style={{
